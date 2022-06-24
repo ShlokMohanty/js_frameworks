@@ -1,0 +1,23 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta ame="viewport" content="width-device-width, initial_scale=1.0">
+<title>learning vue</title>
+<script src="http://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <h1>Hello, vue :)</h1>
+    <p>{{Name}}-{{DanceStyle}}-{{age}}</p>
+    <div id="app">
+        <div v-if="showbooks">
+       <p>{{Name}}-{{Dance_Style}}-{{age}}</p>
+       <p>{{ Name }} - {{ Dance_Style }} - {{ age }}</p>
+       <button v-on:click="age++">increase age</button>
+       <button v-on:click="age--">decrease age</button> 
+       <div @click="changeTitle">change the book title</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
